@@ -10,7 +10,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float jumpPower = 10f;
     [Header("GroundCheck")]
     public Transform groundCheckPos;
-    public Vector2 groundCheckSize = new Vector2(0.5f, 0.5f);
+    public Vector2 groundCheckSize = new(0.5f, 0.5f);
     public int facingDirection = 1;
     public LayerMask groundLayer;
     public Rigidbody2D rb;
@@ -23,7 +23,7 @@ public class PlayerMovement : MonoBehaviour
         
     public void Move(InputAction.CallbackContext context)
     {
-        horizontalInput = context.ReadValue<Vector2>().x;   
+        horizontalInput = context.ReadValue<Vector2>().x;
     }
     public void Jump(InputAction.CallbackContext context)
     {
@@ -58,20 +58,12 @@ public class PlayerMovement : MonoBehaviour
     private void FixedUpdate()
     {
         rb.linearVelocity = new Vector2(horizontalInput * playerSpeed,rb.linearVelocity.y);
-        
-        if (rb.linearVelocity.x < 0 && facingDirection > 0 || rb.linearVelocity.x > 0 && facingDirection < 0)
-        {
 
-            Flip();
-        }
+        if (rb.linearVelocityX > 0)
+            transform.localScale = new Vector3(1, 1, 1);
+        else if (rb.linearVelocityX < 0)
+            transform.localScale = new Vector3(-1, 1, 1);
     }
 
-    void Flip()
-    {
-        facingDirection *= -1;
-        
-        Vector3 scale = transform.localScale;         
-    }
-   
-
+  
 }

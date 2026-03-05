@@ -214,10 +214,12 @@ MonoBehaviour:
   playerSpeed: 5
   jumpPower: 8
   groundCheckPos: {fileID: 7006690489289360425}
-  groundCheckSize: {x: 0.8, y: 0.1}
+  groundCheckSize: {x: 0.7, y: 0.1}
+  facingDirection: 1
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
+  rb: {fileID: 5328754710482258584}
 --- !u!114 &7698323709543740449
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -6,8 +6,8 @@ public class PlayerAnimation : MonoBehaviour
 
     public Animator animator;
     public PlayerMovement playerMovement;
-    private int facingDirection = 1;
-        
+    private SpriteRenderer spriteRenderer;
+
     void Update()
     {
         float xVelocity = playerMovement.rb.linearVelocity.x;
@@ -22,16 +22,10 @@ public class PlayerAnimation : MonoBehaviour
         }
 
 
-        if ((xVelocity > 0 && facingDirection < 0) ||
-            (xVelocity < 0 && facingDirection > 0))
-        {
-            Flip();
-        }
+        if (xVelocity> 0)
+            spriteRenderer.flipX = false;
+        else if (xVelocity < 0)
+            spriteRenderer.flipX = true;
     }
-    void Flip()
-    {
-        facingDirection *= -1;
 
-        Vector3 scale = transform.localScale;
-    }
 }

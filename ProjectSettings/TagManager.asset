@@ -5,15 +5,18 @@ TagManager:
   serializedVersion: 3
   tags:
   - Ground
+  - Trap
+  - Checkpoint
+  - Enemy
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Trap
   - Water
   - UI
   - Ground
-  - 
+  - Checkpoint
   - 
   - 
   - 
