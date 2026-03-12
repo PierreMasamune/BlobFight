@@ -22,9 +22,8 @@ public class PlayerAnimation : MonoBehaviour
         }
 
 
-        if (xVelocity> 0)
-            spriteRenderer.flipX = false;
-        else if (xVelocity < 0)
+        
+        if (xVelocity < 0)
             spriteRenderer.flipX = true;
     }
 

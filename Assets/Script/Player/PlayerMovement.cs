@@ -45,7 +45,7 @@ public class PlayerMovement : MonoBehaviour
         Gizmos.color = Color.yellow;
         Gizmos.DrawCube(groundCheckPos.position,groundCheckSize);
     }
-    // Update is called once per frame
+    
 
     private bool Isgrounded()
     {
@@ -65,5 +65,5 @@ public class PlayerMovement : MonoBehaviour
             transform.localScale = new Vector3(-1, 1, 1);
     }
 
-  
+    
 }

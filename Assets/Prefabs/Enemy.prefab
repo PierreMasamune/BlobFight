@@ -179,8 +179,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1a01b63492aa8d4eb7c792c4781c4b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  distance: 3
   speed: 1
+  checkPos: {fileID: 0}
+  checkSize: {x: 0.5, y: 0.5}
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1 &8481649988062958640
 GameObject:
   m_ObjectHideFlags: 0
@@ -207,8 +211,8 @@ Transform:
   m_GameObject: {fileID: 8481649988062958640}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.9, y: 0.8, z: 1}
+  m_LocalPosition: {x: 0, y: -0.03, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6067357286099737141}
@@ -257,5 +261,5 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.9, y: 0.7}
   m_EdgeRadius: 0
