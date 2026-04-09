@@ -62,7 +62,7 @@ public class EnemyMovement : MonoBehaviour
             {
                 // Opsional: buat player memantul ke atas
                 Rigidbody2D playerRb = collision.gameObject.GetComponent<Rigidbody2D>();
-                if (playerRb != null)
+                if (playerRb != null)           
                 {
                     playerRb.AddForce(Vector2.up * 300f);
                 }
