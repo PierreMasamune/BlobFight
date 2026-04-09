@@ -18,7 +18,7 @@ public class TriggerEvent : MonoBehaviour
     public UnityEvent<GameObject> OnTrigger;
     private void OnTriggerEnter2D(Collider2D col)
     {
-        if (col.tag == targetTag.ToString())
+        if (col.CompareTag(targetTag.ToString()))
         {
             Debug.Log(gameObject.tag + " Kena! " + col.gameObject.tag);
             OnTrigger?.Invoke(col.gameObject);
