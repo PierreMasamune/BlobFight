@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerPositionHandler : MonoBehaviour
 {
@@ -31,6 +32,11 @@ public class PlayerPositionHandler : MonoBehaviour
     public void OnTrap()
     {
         ChangePlayerPosition(currentCheckpointPosition);
+    }
+    public void OnFinish()
+    {
+        SceneManager.LoadScene("Main Menu");
+
     }
 
 
