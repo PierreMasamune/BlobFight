@@ -181,7 +181,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1a01b63492aa8d4eb7c792c4781c4b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  speed: 2
+  speed: 1
   checkWallPos: {fileID: 1293160814200654382}
   checkWallSize: {x: 0.5, y: 0.5}
   groundLayer:

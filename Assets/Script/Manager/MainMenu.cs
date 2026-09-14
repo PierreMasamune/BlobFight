@@ -6,7 +6,7 @@ public class MainMenu : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public void PlayGame()
     {
-        SceneManager.LoadScene("LevelMenu");
+        SceneManager.LoadScene("Level Menu");
     }
 
     // Update is called once per frame
@@ -14,4 +14,5 @@ public class MainMenu : MonoBehaviour
     {
         Application.Quit();
     }
+
 }

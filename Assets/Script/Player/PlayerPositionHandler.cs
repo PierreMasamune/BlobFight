@@ -35,7 +35,7 @@ public class PlayerPositionHandler : MonoBehaviour
     }
     public void OnFinish()
     {
-        SceneManager.LoadScene("Main Menu");
+        SceneManager.LoadScene("Level Menu");
 
     }
 
